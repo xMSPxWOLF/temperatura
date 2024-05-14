@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function converter(temperatura, escala){
+            if (escala === "c"){
+                return (9/5) * temperatura + 32
+            }
+            else if (temperatura === "c"){
+                return temperatura - 32 / (9/5)
+            }
+        }
+        let temperatura = Number(prompt("Escolha a tempertatura para ser convertida."))
+        let escala = prompt("digite c para celcius ou f para fahrenheit")
+        let resultado = converter(temperatura, escala)
+        
+        if (escala === c) {
+            document.write(`${temperatura}°C é igual a ${resultado}°F`)
+        }
+        else if (escala === f) {
+            console.log(`${temperatura}°F é igual a ${resultado}°C`)
+        }
+        else {
+            console.log("Este número não funciona, seja inteligente e use outro")
+        }
+    
+    </script>
+</body>
+</html>
